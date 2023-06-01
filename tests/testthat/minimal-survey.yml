@@ -1,0 +1,22 @@
+survey:
+  name: "Minimal test survey"
+  project: "surveysim" 
+  respondent_id: participant_id
+  questions: 
+    - question:
+        type: mc_single
+        p_missing: .05
+        var: fave_icecream
+        text: "What is your favourite icecream flavour?"
+        response_options: 
+          - "Strawberry"
+          - "Chocolate"
+          - "Vanilla"
+        other: true
+    - question: 
+        type: number
+        p_missing: .2
+        var: lifetime_cones
+        text: "How many ice cream cones have you eaten (give us your best guess)?"
+        min: 0
+        max: 1800
